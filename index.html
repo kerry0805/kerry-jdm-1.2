@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JDM</title>
+    <link rel="stylesheet" href="css/first.css" />
+    
+    <style>
+      p {
+        color: aliceblue;
+        font-family: Verdana;
+        font-size: 150%;
+      }
+      #text,
+      #engine,
+      #pre,
+      #text1,
+      #engine1,
+      #pre1,
+      #text2,
+      #engine2,
+      #pre2 {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="js/Js.js">
+      function hideText(text, engine, pre) {
+        text.style.display = "none";
+        engine.style.display = "none";
+        pre.style.display = "none";
+      }
+      function toggleText(text, img, pre) {
+        if (text.style.display === "none") {
+          text.style.display = "block";
+          img.style.display = "block";
+          pre.style.display = "block";
+        } else {
+          text.style.display = "none";
+          img.style.display = "none";
+          pre.style.display = "none";
+        }
+      }
+    </script>
+    <h1
+      style="
+        color: rgb(218, 224, 247);
+        text-align: center;
+        font-family: verdana;
+        font-size-adjust: 1;
+      "
+    >
+      Japanese Domestic Market
+    </h1>
+    <pre style="color: aliceblue; font-size: 150%">
+はじめまして、私はkerriです
+これは私のコレクション </pre
+    >
+    <main>
+      <div>
+        <p><b>Honda NSX Type S Zero '97</b></p>
+        <img
+          src="images/NSX_Type_S_97.png"
+          width="1320"
+          alt="Honda NSX Type S Zero 1997"
+          tabindex="0"
+          onfocus="handleFocus(this)"
+          onblur="handleBlur(this)"
+          onmouseover="handleMouseOver(this)"
+          onmouseleave="handleMouseLeave(this)"
+        />
+        <p id="text" style="color: aliceblue">
+          Engine: Honda C32B - V6 - 3179 cm³ (3.2L)
+        </p>
+        <img
+          id="engine"
+          src="images/r-engine.jpg"
+          width="750"
+          alt="Honda C32B"
+        />
+        <pre id="pre" style="color: aliceblue; font-size: 15px">
+Aspiration: Natural_Aspirated
+Layout: Mid-Engined
+Gearbox: 6-speed Manual
+Drivetrain: RWD
+Power:	289 ps (284 bhp / 212 kw)
+Torque:	304 Nm (224 lb-ft)</pre
+        >
+        <br />
+        <button
+          type="button"
+          onclick="toggleText(document.getElementById('text'),document.getElementById('engine'),document.getElementById('pre'))"
+        >
+          Engine
+        </button>
+      </div>
+      <br />
+      <div>
+        <p><b>NISMO Skyline GT-R S-Tune R32 '00</b></p>
+        <img
+          src="images/GTR_R32.png"
+          width="1320"
+          alt="NISMO Skyline GT-R S-Tune R32 '00"
+          tabindex="0"
+          onfocus="handleFocus(this)"
+          onblur="handleBlur(this)"
+          onmouseover="handleMouseOver(this)"
+          onmouseleave="handleMouseLeave(this)"
+        />
+        <p id="text1" style="color: aliceblue">
+          Engine: NISMO S1 Turbo - I6 - 2568 cm³ (2.6L)
+        </p>
+        <img
+          id="engine1"
+          src="images/nismo_s1.jpeg"
+          width="750"
+          alt="NISMO S1"
+        />
+        <pre id="pre1" style="color: aliceblue; font-size: 15px">
+Aspiration: Twin-Turbocharged
+Layout: Front-Engined
+Gearbox: 5-speed Manual
+Drivetrain: AWD
+Power	400 ps (394 bhp / 294 kw)
+Torque	441 Nm (325 lb-ft)</pre
+        >
+        <br />
+        <button
+          type="button"
+          onclick="toggleText(document.getElementById('text1'),document.getElementById('engine1'),document.getElementById('pre1'))"
+        >
+          Engine
+        </button>
+      </div>
+      <br />
+      <div>
+        <p><b>Mazda RX7 Type RZ FD 00'</b></p>
+        <img
+          src="images/RX7.png"
+          width="1320"
+          alt="Mazda RX7 Type RZ FD 00'"
+          tabindex="0"
+          onfocus="handleFocus(this)"
+          onblur="handleBlur(this)"
+          onmouseover="handleMouseOver(this)"
+          onmouseleave="handleMouseLeave(this)"
+        />
+        <p id="text2" style="color: aliceblue">
+          Engine: Mazda 13B - 2-rotor Wankel - 1308 cm³ (1.3L)
+        </p>
+        <img
+          id="engine2"
+          src="images/13B.jpg"
+          width="750"
+          alt="Mazda RX7 Type RZ FD 00'"
+        />
+        <pre id="pre2" style="color: aliceblue; font-size: 15px">
+Aspiration: Twin-Turbocharged
+Layout: Front-Engined
+Gearbox: 6-speed Manual
+Drivetrain: RWD
+Power	280 ps (276 bhp / 206 kw)
+Torque	314 Nm (231 lb-ft)</pre
+        >
+        <br />
+        <button
+          type="button"
+          onclick="toggleText(document.getElementById('text2'),document.getElementById('engine2'),document.getElementById('pre2'))"
+        >
+          Engine
+        </button>
+      </div>
+    </main>
+    <footer><p>This data is derived from Gran Turismo Series</p></footer>
+  </body>
+</html>
