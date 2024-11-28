@@ -31,3 +31,20 @@ function handleMouseLeave(img) {
   img.style.opacity = "1";
   console.log(`Mouse left image: ${img.alt}`);
 }
+function hideText(text, engine, pre) {
+  text.style.display = "none";
+  engine.style.display = "none";
+  pre.style.display = "none";
+}
+function toggleText(text, img, pre) {
+  if (text.style.display === "none" || text.style.display === "") {
+    text.style.display = "block";
+    img.style.display = "block";
+    pre.style.display = "block";
+  } else {
+    text.style.display = "none";
+    img.style.display = "none";
+    pre.style.display = "none";
+  }
+}
+
